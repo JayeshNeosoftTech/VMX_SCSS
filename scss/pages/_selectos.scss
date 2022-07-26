@@ -4,25 +4,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 172px;
+    font-family: 'montserrat';
 
-    @media screen and (max-width:992px) {
+    @include breakpoint(ipad-max) {
         padding-bottom: 100px;
     }
     &__block{
         height: 100%;
-
-        .logo_img1{
-            height: 34.5px;
-            width: 83.85px;
-            margin-top: 35px;
-            margin-left: 0px;
-        }
         .selectos__content{
             margin: 102.5px 0px 0px 0px;
 
             &_heading{
                 font-size: 35px;
-                font-family: montserrat-bold;
+                font-weight: 700;
                 color: #494949;
 
                 @media screen and (max-width:768px) {
@@ -42,7 +36,7 @@
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
-                font-family: montserrat-medium;
+                font-weight: 500;
 
                 &:hover{
                     color: #F28A49;
@@ -60,7 +54,7 @@
                 border: none;
                 color: #F28A49;
                 cursor: pointer;
-                font-family: montserrat-medium;
+                font-weight: 500;
 
                 @media screen and (max-width: 1031px) {
                     margin-top: 10px;
@@ -74,7 +68,7 @@
                 flex-wrap: wrap;
                 margin-top: 35px;
 
-                &-content1, &-content2{
+                &-contentone, &-contenttwo{
                     background-color: #FFFFFF;
                     border-radius: 10px;
                     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
@@ -97,13 +91,13 @@
                         width: auto;
                     }
                 }
-                &-content2{
+                &-contenttwo{
                     margin-left: 61px;
 
                     &:hover{
                         background-color: #F58025;
                     }
-                    @media screen and (max-width:992px) {
+                    @include breakpoint(ipad-max) {
                         margin-left: 0px;
                     }
                     @media screen and (max-width:768px) {
@@ -123,7 +117,7 @@
                     float: right;
                     margin-right: 15%;
                     position: absolute;
-                    font-family: montserrat-medium;
+                    font-weight: 500;
 
                     @media screen and (max-width: 1031px) {
                         margin-right: 10%;
@@ -135,23 +129,23 @@
                         margin-right: 5%;
                     }
                 }
-                &-content1_heading, &-content2_heading{
+                &-contentone_heading, &-contenttwo_heading{
                     font-size: 24px;
                     margin-top: 11px;
                     font-weight: 500;
                     color: #434343;
-                    font-family: montserrat-semibold;
+                    font-weight: 600;
 
                     @media screen and (max-width:768px) {
                         font-size: 22px;
                     }
                 }
-                &-content1_subheading, &-content2_subheading{
+                &-contentone_subheading, &-contenttwo_subheading{
                     font-size: 24px;
                     margin-top: 24px;
                     font-weight: 500;
                     color: #434343;
-                    font-family: montserrat-semibold;
+                    font-weight: 500;
 
                     @media screen and (max-width:768px) {
                         font-size: 22px;
@@ -164,13 +158,13 @@
                     margin-top: 22px;
                     padding: 11px 76px 11px 14px;
                     color: #494949;
-                    font-family: montserrat-semibold;
+                    font-weight: 500;
                     background-image: url('../images/select_arrow.png');
                     background-position: 95%;
                     background-repeat: no-repeat;
                     appearance: none;
 
-                    @media screen and (max-width:992px) {
+                    @include breakpoint(ipad-max) {
                         padding: 11px 40px 11px 5px;
                         background-position: 96%;
                     }
@@ -186,19 +180,19 @@
                     }
                 }
 
-                @media screen and (max-width:992px) {
+                @include breakpoint(ipad-max) {
                     justify-content: space-evenly;
                 }
             }
-            .selectos__content_version-content1:hover .selectos__content_version-pills, .selectos__content_version-content2:hover .selectos__content_version-pills{
+            .selectos__content_version-contentone:hover .selectos__content_version-pills, .selectos__content_version-contenttwo:hover .selectos__content_version-pills{
                 border-color: #F28A49;
                 color: #F58025;
             }
-            .selectos__content_version-content1:hover .selectos__content_version-content1_heading, .selectos__content_version-content2:hover .selectos__content_version-content2_heading{
+            .selectos__content_version-contentone:hover .selectos__content_version-contentone_heading, .selectos__content_version-contenttwo:hover .selectos__content_version-contenttwo_heading{
                 color: #FFFFFF;
-                font-family: montserrat-bold;
+                font-weight: 700;
             }
-            .selectos__content_version-content1:hover .selectos__content_version-content1_subheading, .selectos__content_version-content2:hover .selectos__content_version-content2_subheading{
+            .selectos__content_version-contentone:hover .selectos__content_version-contentone_subheading, .selectos__content_version-contenttwo:hover .selectos__content_version-contenttwo_subheading{
                 color: #FFFFFF;
             }
         }

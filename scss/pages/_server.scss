@@ -3,6 +3,7 @@
     background-image: url('../images/server_bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'montserrat';
 
     &__block{
         position: relative;
@@ -57,7 +58,7 @@
             color: #444444;
             padding: 10px;
             padding: 100px 0px 56px;
-            font-family: montserrat-medium;
+            font-weight: 500;
 
             @media screen and (max-width:768px) {
                 font-size: 18px;
@@ -75,7 +76,7 @@
     }
     &__content_heading{
         font-size: 35px;
-        font-family: montserrat-bold;
+        font-weight: 700;
         color: #494949;
 
         @media screen and (max-width:768px) {
@@ -119,14 +120,15 @@
             @media screen and (max-width:575px){
                 width:85%;
             }
-        }
-        .server__slide::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: fit-content;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: fit-content;
+            }
         }
         .server__slider_content{
             border: 1px solid #707070;
@@ -139,9 +141,10 @@
                 width: 100%;
                 height: fit-content;
             }
-        }
-        .server__slider_content:hover .server__slider_header{
-            background-color: #F58025;
+
+            &:hover .server__slider_header{
+                background-color: #F58025;
+            }
         }
         .server__slider_header{
             background-color: #2980C9;
@@ -155,7 +158,7 @@
         .server__slider_heading{
             font-size: 16px;
             font-weight: 500;
-            font-family: montserrat-medium;
+            font-weight: 500;
             @media screen and (max-width:768px) {
                 font-size: 14px;
             }
@@ -163,7 +166,7 @@
         .server__slider_subheading{
             font-size: 24px;
             margin-top: 8px;
-            font-family: montserrat-semibold;
+            font-weight: 600;
             @media screen and (max-width:768px) {
                 font-size: 22px;
             }
@@ -174,7 +177,7 @@
             width: fit-content;
             margin: 18px 22px;
             line-height: 20pt;
-            font-family: montserrat-medium;
+            font-weight: 500;
             color: #494949;
 
             @media screen and (max-width: 525px) {

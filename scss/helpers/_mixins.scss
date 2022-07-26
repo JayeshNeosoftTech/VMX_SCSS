@@ -1,11 +1,28 @@
-/* $breakpoints: ('mobile-s': (max-width: 320px),
-    'mobile-m': (max-width: 375px),
-    'mobile-l': (max-width: 425px),
-    'mobile-xl': (max-width: 575px),
-    'tablet': (max-width: 768px),
-    'ipad-max': (max-width: 992px),
-    'desktop': (max-width: 1024px),
-    'large-desktop': (max-width: 1200px),
+$breakpoints: (
+  'custom-small-mobile-max': (max-width: 359px),
+  'mobile-sm': (max-width: 355px),
+  'mobile-m': (max-width: 375px),
+  'mobile-l': (max-width: 425px),
+  'mobile-l-max': (max-width: 476px),
+  'portrait-mobile-mid': (max-width: 525px),
+  'portrait-mobile-max': (max-width: 575px),
+  'mobile-min': (min-width: 576px),
+  'mobile-mid-max': (min-width: 601px),
+  'mobile-mid': (min-width: 640px),
+  'mobile-max': (max-width: 767px),
+  'ipad-min': (min-width: 768px),
+  'ipad-mid-max': (max-width: 800px),
+  'ipad-mid': (max-width: 950px),
+  'ipad-max': (max-width: 991px),
+  'desktop-min': (min-width: 992px),
+  'desktop': (max-width: 1024px),
+  'desktop-mid': (max-width: 1031px),
+  'desktop-max': (max-width: 1199px),
+  'large-desktop-min': (min-width: 1200px),
+  'large-desktop-max': (max-width: 1280px),
+  'medium-large-desktop-max-desktop-min': (min-width:1024px) and (max-width:1365px),
+  'medium-large-desktop-min': (min-width: 1367px),
+  'medium-large-desktop-max': (max-width: 1400px),
 );
 
 @mixin breakpoint($name) {
@@ -18,4 +35,4 @@
   @else {
     @warn "Couldn't find a breakpoint named `#{$name}`.";
   }
-} */
+}

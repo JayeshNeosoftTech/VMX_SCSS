@@ -1,6 +1,7 @@
 .country{
     width: 100%;
     background-color: #FAFBFF;
+    font-family: 'montserrat';
 
     &__block{
         position: relative;
@@ -25,7 +26,7 @@
             top: 48%;
             right: 8%;
 
-            @media screen and (max-width:992px) {
+            @include breakpoint(ipad-max) {
                 right: 4%;
             }
             @media screen and (max-width:768px) {
@@ -42,7 +43,7 @@
             top: 48%;
             left: 8%;
 
-            @media screen and (max-width:992px) {
+            @include breakpoint(ipad-max) {
                 left: 4%;
             }
             @media screen and (max-width:768px) {
@@ -75,7 +76,7 @@
         font-size: 22px;
         font-weight: 100;
         margin-top: 85px;
-        font-family: montserrat-medium;
+        font-weight: 500;
         color: #494949;
 
         @media screen and (max-width:768px) {
@@ -115,7 +116,7 @@
             flex-direction: column;
             justify-content: space-between;
 
-            .group1-content, .group2-content{
+            .groupone-content, .grouptwo-content{
                 width: 145px;
                 height: 136px;
                 border-radius: 5px;
@@ -124,7 +125,7 @@
                 background-color: #FFFFFF;
                 box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.16);
             }
-            .group1-content{
+            .groupone-content{
                 align-self: flex-start;
                 position: relative;
 
@@ -136,10 +137,10 @@
                     font-size: 14px;
                     color: #040503;
                     text-align: center;
-                    font-family: montserrat-medium;
+                    font-weight: 500;
                 }
             }
-            .group2-content{
+            .grouptwo-content{
                 align-self: flex-end;
                 margin-top: 50px;
                 position: relative;
@@ -148,7 +149,7 @@
                     font-size: 14px;
                     color: #040503;
                     text-align: center;
-                    font-family: montserrat-medium;
+                    font-weight: 500;
                 }
                 &:hover .overlay{
                     bottom: 0;
@@ -203,7 +204,7 @@
                     align-self: center;
                     padding-right: 5px;
                     font-size: 14px;
-                    font-family: montserrat-medium;
+                    font-weight: 500;
                 }
               }
         }

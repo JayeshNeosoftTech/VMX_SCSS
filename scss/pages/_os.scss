@@ -3,6 +3,7 @@
     background-image: url('../images/os_bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'montserrat';
 
     &__block{
         position: relative;
@@ -69,9 +70,9 @@
     &__content{
         padding: 66px 0px;
 
-        &_h2{
+        &_heading{
             font-size: 35px;
-            font-family: montserrat-bold;
+            font-weight: 700;
             color: #494949;
 
             @media screen and (max-width:768px) {
@@ -91,7 +92,7 @@
             background-color: transparent;
             border: none;
             cursor: pointer;
-            font-family: montserrat-medium;
+            font-weight: 500;
 
             &:hover{
                 color: #F28A49;
@@ -112,7 +113,7 @@
             border: none;
             color: #F28A49;
             cursor: pointer;
-            font-family: montserrat-medium;
+            font-weight: 500;
 
             @media screen and (max-width: 1280px) {
                 margin-right: 0px;
@@ -137,9 +138,9 @@
             @media screen and (max-width: 375px) {
                 width: 67%;
             }
-        }
-        .owl-carousel.os__slider .owl-item img{
-            width: fit-content;
+            & .owl-item img{
+                width: fit-content;
+            }
         }
         .os__sliderwrapper {
             width: fit-content;
@@ -183,16 +184,16 @@
                 color: #FFFFFF;
                 background-color: #F28A49;
             }
+            &:hover .os__slider_hrline{
+                background-color: #FFFFFF;
+            }
+            &:hover #aima_img{
+                filter: invert(1);
+            }
 
             @media screen and (max-width: 1024px) {
                 width: 100%;
             }
-        }
-        .os__slider_content:hover .os__slider_hrline{
-            background-color: #FFFFFF;
-        }
-        .os__slider_content:hover #aima_img{
-            filter: invert(1);
         }
         .os__slider_logoimg{
             margin: 56px auto 0px auto;
@@ -206,7 +207,7 @@
         .os__slider_description{
             margin: auto 36px 22.9px;
 
-            @media screen and (max-width:992px) {
+            @include breakpoint(ipad-max) {
                 margin: auto 20px 22.9px;
             }
         }
@@ -214,7 +215,7 @@
             font-size: 20px;
             text-align: center;
             margin-bottom: 9px;
-            font-family: montserrat-medium;
+            font-weight: 600;
 
             @media screen and (max-width:768px) {
                 font-size: 18px;
@@ -233,40 +234,46 @@
             font-size: 12px;
             text-align: center;
             margin-top: 9px;
-            font-family: montserrat-medium;
+            font-weight: 500;
         }
         .os__slider_ospara{
             text-align: center;
             margin: 2px 0px;
             font-weight: 600;
             font-size: 14px;
-            font-family: montserrat-medium;
         }
         .owl-dots{
             margin-top: 63px;
             text-align: center;
 
             @media screen and (max-width:768px) {
-                margin-top: 40px;
+                margin-top: 25px;
             }
-        }
-        .owl-dots button.owl-dot {
-            padding: 10px !important;
-            font: inherit;
-            background-color: #E6E6E6;
-            border-radius: 10px;
-            margin-right: 17px;
-        }
-        .owl-dots button.owl-dot.active{
-            background-color: #F28A49;
-        }
-        .owl-dots span {
-            width: 20px !important;
-            height: 20px !important;
-        }
-        .owl-dots button {
-            border: none !important;
-            outline: none !important;
+
+            & button.owl-dot {
+                padding: 10px !important;
+                font: inherit;
+                background-color: #E6E6E6;
+                border-radius: 10px;
+                margin-right: 17px;
+
+                @media screen and (max-width:768px) {
+                    padding: 7px !important;
+                }
+
+                &.active{
+                    background-color: #F28A49;
+                }
+            }
+
+            & span {
+                width: 20px !important;
+                height: 20px !important;
+            }
+            & button {
+                border: none !important;
+                outline: none !important;
+            }
         }
         .owl-nav button {
             border: none !important;
@@ -276,14 +283,15 @@
             font-size: 20px;
             color: #444444;
             padding: 33.1px 0px 0px;
-            font-family: montserrat-medium;
+            font-weight: 500;
 
             @media screen and (max-width:768px) {
                 font-size: 18px; /* 20 to 18 */
             }
-        }
-        .os__content_selectedos span{
-            font-weight: bold;
+
+            & span{
+                font-weight: bold;
+            }
         }
     }
 }
