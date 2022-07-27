@@ -5,7 +5,7 @@
     &__blocktwo{
         padding-bottom: 60px;
 
-        @media screen and (max-width:768px) {
+         @include breakpoint(ipad-min) {
             padding-bottom: 20px;
         }
 
@@ -21,7 +21,7 @@
                 width: 100%;
                 justify-content: space-evenly;
             }
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 margin-top: -8%;
                 width: 100%;
                 flex-direction: column;
@@ -33,7 +33,7 @@
                 width: 100%;
                 justify-content: space-evenly;
             }
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 margin-top: -8%;
                 width: 100%;
                 flex-direction: column;
@@ -46,7 +46,7 @@
             width: auto;
             background-color: #F9F9F9;
 
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 order: 2;
                 margin-bottom: 40px;
             }
@@ -61,7 +61,7 @@
                     color: #061E95;
                     font-weight: 600;
 
-                    @media screen and (max-width:768px) {
+                     @include breakpoint(ipad-min) {
                         font-size: 22px;
                     }
                 }
@@ -71,7 +71,7 @@
                     color: #061E95;
                     font-weight: 500;
 
-                    @media screen and (max-width:768px) {
+                     @include breakpoint(ipad-min) {
                         font-size: 16px;
                     }
                 }
@@ -85,10 +85,10 @@
                     margin: 32px auto 14px;
                     width: fit-content;
                 }
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     margin: 35px 30px 14px;
                 }
-                @media screen and (max-width: 425px) {
+                 @include breakpoint(mobile-l) {
                     margin: 32px 25px 14px;
                     width: fit-content;
                 }
@@ -100,7 +100,7 @@
                     @include breakpoint(ipad-max) {
                         padding-bottom: 24px;
                     }
-                    @media screen and (max-width:768px) {
+                     @include breakpoint(ipad-min) {
                         padding-bottom: 30px;
                     }
                     & i{
@@ -118,7 +118,7 @@
                 font-weight: 500;
                 color: #494949;
 
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     font-size: 14px;
                 }
             }
@@ -137,19 +137,19 @@
                     background-color: transparent;
                     color: #061F95;
                 }
-                @media screen and (max-width: 1280px) {
+                 @include breakpoint(large-desktop-max) {
                     padding: 9px 22px;
                 }
                 @include breakpoint(ipad-max) {
                     padding: 9px 15px;
                     margin: 28px 45px 25px;
                 }
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     font-size: 14px;
                     padding: 9px 36px;
                     margin: 28px 52px 25px;
                 }
-                @media screen and (max-width: 425px) {
+                 @include breakpoint(mobile-l) {
                     padding: 9px 15px;
                 }
             }
@@ -161,7 +161,7 @@
                 @include breakpoint(ipad-max) {
                     margin: 0px 25px;
                 }
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     order: 1;
                     margin: 0px 0px 65px 0px;
                 }
@@ -174,14 +174,14 @@
                         color: #F58025;
                         font-size: 28px;
 
-                        @media screen and (max-width:768px) {
+                         @include breakpoint(ipad-min) {
                             font-size: 24px;
                         }
                     }
                     &_subheading{
                         color: #494949;
                         font-size: 18px;
-                        @media screen and (max-width:768px) {
+                         @include breakpoint(ipad-min) {
                             font-size: 16px;
                         }
                     }
@@ -219,10 +219,10 @@
             font-weight: 700;
             color: #494949;
 
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 font-size: 30px;
             }
-            @media screen and (max-width: 640px) {
+             @include breakpoint(mobile-mid) {
                 padding: 35px 8px 0px;
             }
         }
@@ -265,7 +265,7 @@
             &__radio_btnone label{
                 color: #FFFFFF;
 
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     font-size: 14px;
                 }
             }
@@ -277,7 +277,7 @@
             &__radio_btntwo label{
                 color: #494949;
 
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     font-size: 14px;
                 }
             }

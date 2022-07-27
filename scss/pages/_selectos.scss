@@ -19,7 +19,7 @@
                 font-weight: 700;
                 color: #494949;
 
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     font-size: 30px;
                 }
             }
@@ -41,10 +41,10 @@
                 &:hover{
                     color: #F28A49;
                 }
-                @media screen and (max-width: 1031px) {
+                 @include breakpoint(desktop-mid) {
                     margin-top: 10px;
                 }
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     font-size: 22px;
                 }
             }
@@ -56,10 +56,10 @@
                 cursor: pointer;
                 font-weight: 500;
 
-                @media screen and (max-width: 1031px) {
+                 @include breakpoint(desktop-mid) {
                     margin-top: 10px;
                 }
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     font-size: 22px;
                 }
             }
@@ -79,14 +79,14 @@
                         background-color: #F58025;
                     }
 
-                    @media screen and (max-width: 1031px) {
+                     @include breakpoint(desktop-mid) {
                         width: fit-content;
                         padding: 30px 20px;
                     }
-                    @media screen and (max-width:768px) {
+                     @include breakpoint(ipad-min) {
                         padding: 30px;
                     }
-                    @media screen and (max-width: 525px) {
+                     @include breakpoint(portrait-mobile-mid) {
                         padding: 20px 15px;
                         width: auto;
                     }
@@ -100,7 +100,7 @@
                     @include breakpoint(ipad-max) {
                         margin-left: 0px;
                     }
-                    @media screen and (max-width:768px) {
+                     @include breakpoint(ipad-min) {
                         margin-top: 40px;
                     }
                 }
@@ -119,13 +119,13 @@
                     position: absolute;
                     font-weight: 500;
 
-                    @media screen and (max-width: 1031px) {
+                     @include breakpoint(desktop-mid) {
                         margin-right: 10%;
                     }
-                    @media screen and (max-width:768px) {
+                     @include breakpoint(ipad-min) {
                         font-size: 10px;
                     }
-                    @media screen and (max-width: 525px) {
+                     @include breakpoint(portrait-mobile-mid) {
                         margin-right: 5%;
                     }
                 }
@@ -136,7 +136,7 @@
                     color: #434343;
                     font-weight: 600;
 
-                    @media screen and (max-width:768px) {
+                     @include breakpoint(ipad-min) {
                         font-size: 22px;
                     }
                 }
@@ -147,7 +147,7 @@
                     color: #434343;
                     font-weight: 500;
 
-                    @media screen and (max-width:768px) {
+                     @include breakpoint(ipad-min) {
                         font-size: 22px;
                     }
                 }
@@ -168,14 +168,14 @@
                         padding: 11px 40px 11px 5px;
                         background-position: 96%;
                     }
-                    @media screen and (max-width:768px) {
+                     @include breakpoint(ipad-min) {
                         font-size: 18px;
                         padding: 11px 76px 11px 14px;
                     }
-                    @media screen and (max-width: 525px) {
+                     @include breakpoint(portrait-mobile-mid) {
                         padding: 11px 40px 11px 10px;
                     }
-                    @media screen and (max-width: 375px) {
+                     @include breakpoint(mobile-m) {
                         font-size: 16px;
                     }
                 }

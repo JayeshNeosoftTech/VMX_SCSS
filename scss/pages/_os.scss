@@ -27,20 +27,20 @@
             top: 52%;
             right: 0%;
 
-            @media screen and (max-width:950px) {
+             @include breakpoint(ipad-mid) {
                 top: 55%;
             }
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 right: -10px;
             }
-            @media screen and (max-width:575px){
+             @include breakpoint(portrait-mobile-max){
                 top: 60%;
             }
-            @media screen and (max-width: 525px) {
+             @include breakpoint(portrait-mobile-mid) {
                 right: 0%;
                 top: 62%;
             }
-            @media screen and (max-width: 476px){
+             @include breakpoint(mobile-l-max){
                 top: 64%;
             }
         }
@@ -48,21 +48,21 @@
             top: 52%;
             left: 0%;
 
-            @media screen and (max-width:950px) {
+             @include breakpoint(ipad-mid) {
                 top: 55%;
             }
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 left: -10px;
             }
-            @media screen and (max-width:575px){
+             @include breakpoint(portrait-mobile-max){
                 top: 60%;
             }
-            @media screen and (max-width: 525px) {
+             @include breakpoint(portrait-mobile-mid) {
                 display: flex;
                 left: 0%;
                 top: 62%;
             }
-            @media screen and (max-width: 476px){
+             @include breakpoint(mobile-l-max){
                 top: 64%;
             }
         }
@@ -75,7 +75,7 @@
             font-weight: 700;
             color: #494949;
 
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 font-size: 30px;
             }
         }
@@ -97,13 +97,13 @@
             &:hover{
                 color: #F28A49;
             }
-            @media screen and (max-width: 1280px) {
+             @include breakpoint(large-desktop-max) {
                 margin-right: 0px;
             }
-            @media screen and (max-width: 1031px) {
+             @include breakpoint(desktop-mid) {
                 margin-top: 10px;
             }
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 font-size: 22px; 
             }
         }
@@ -115,13 +115,13 @@
             cursor: pointer;
             font-weight: 500;
 
-            @media screen and (max-width: 1280px) {
+             @include breakpoint(large-desktop-max) {
                 margin-right: 0px;
             }
-            @media screen and (max-width: 1031px) {
+             @include breakpoint(desktop-mid) {
                 margin-top: 10px;
             }
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 font-size: 22px; 
             }
         }
@@ -131,11 +131,11 @@
             height: fit-content;
             margin: 40.3px auto 0px;
 
-            @media screen and (max-width: 525px) {
+             @include breakpoint(portrait-mobile-mid) {
                 width: 60%;
                 margin: 40.3px auto 0px auto;
             }
-            @media screen and (max-width: 375px) {
+             @include breakpoint(mobile-m) {
                 width: 67%;
             }
             & .owl-item img{
@@ -149,16 +149,16 @@
             padding-bottom: 8px;
             margin: auto;
 
-            @media screen and (max-width: 1024px) {
+             @include breakpoint(desktop) {
                 width: 80%;
             }
-            @media screen and (max-width:575px){
+             @include breakpoint(portrait-mobile-max){
                 width: 60%;
             }
-            @media screen and (max-width: 525px) {
+             @include breakpoint(portrait-mobile-mid) {
                 width: 90%;
             }
-            @media screen and (max-width: 425px) {
+             @include breakpoint(mobile-l) {
                 width: 96%;
             }
             &::before {
@@ -191,7 +191,7 @@
                 filter: invert(1);
             }
 
-            @media screen and (max-width: 1024px) {
+             @include breakpoint(desktop) {
                 width: 100%;
             }
         }
@@ -217,7 +217,7 @@
             margin-bottom: 9px;
             font-weight: 600;
 
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 font-size: 18px;
             }
         }
@@ -246,7 +246,7 @@
             margin-top: 63px;
             text-align: center;
 
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 margin-top: 25px;
             }
 
@@ -257,7 +257,7 @@
                 border-radius: 10px;
                 margin-right: 17px;
 
-                @media screen and (max-width:768px) {
+                 @include breakpoint(ipad-min) {
                     padding: 7px !important;
                 }
 
@@ -285,7 +285,7 @@
             padding: 33.1px 0px 0px;
             font-weight: 500;
 
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 font-size: 18px; /* 20 to 18 */
             }
 

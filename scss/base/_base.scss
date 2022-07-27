@@ -12,6 +12,11 @@ body{
 .container{
     width: 93%;
     margin: 0 auto;
+    @include breakpoint(medium-large-desktop-min) {
+        max-width: 1366px;
+        margin: 0 auto;
+        width: auto;
+    }
 }
 .logo_img{
     height: 34.5px;

@@ -27,29 +27,29 @@
             top: 53%;
             right: -14px;
 
-            @media screen and (max-width: 640px) {
+             @include breakpoint(mobile-mid) {
                 top: 50%;
             }
-            @media screen and (max-width:575px){
+             @include breakpoint(portrait-mobile-max){
                 right: 0;
             }
-            @media screen and (max-width: 525px) {
+             @include breakpoint(portrait-mobile-mid) {
                 top: 55%;
             }
         }
         .server__slider_prevarrow {
             top: 53%;
             left: -10px;
-            @media screen and (max-width:800px) {
+             @include breakpoint(ipad-mid-max) {
                 left: -12px;
             }
-            @media screen and (max-width: 640px) {
+             @include breakpoint(mobile-mid) {
                 top: 50%;
             }
-            @media screen and (max-width:575px){
+             @include breakpoint(portrait-mobile-max){
                 left: 0;
             }
-            @media screen and (max-width: 525px) {
+             @include breakpoint(portrait-mobile-mid) {
                 top: 55%;
             }
         }
@@ -60,10 +60,10 @@
             padding: 100px 0px 56px;
             font-weight: 500;
 
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 font-size: 18px;
             }
-            @media screen and (max-width: 525px) {
+             @include breakpoint(portrait-mobile-mid) {
                 padding: 40px 0px 56px;
             }
         }
@@ -79,7 +79,7 @@
         font-weight: 700;
         color: #494949;
 
-        @media screen and (max-width:768px) {
+         @include breakpoint(ipad-min) {
             font-size: 30px;
         }
     }
@@ -90,15 +90,15 @@
         margin: 30px auto 0px;
         padding-left: 7px;
 
-        @media screen and (max-width: 1280px) {
+         @include breakpoint(large-desktop-max) {
             width: 92%;
             padding-left: 0px;
         }
-        @media screen and (max-width: 640px) {
+         @include breakpoint(mobile-mid) {
             width: 85%;
             margin: 30px auto;
         }
-        @media screen and (max-width: 601px){
+         @include breakpoint(mobile-mid-max){
             padding-left: 0%;
         }
 
@@ -108,16 +108,16 @@
             position: relative;
             padding: 10px;
 
-            @media screen and (max-width: 1280px) {
+             @include breakpoint(large-desktop-max) {
                 margin: auto;
             }
-            @media screen and (max-width:800px) {
+             @include breakpoint(ipad-mid-max) {
                 width: 95%;
             }
-            @media screen and (max-width: 640px) {
+             @include breakpoint(mobile-mid) {
                 width: fit-content;
             }
-            @media screen and (max-width:575px){
+             @include breakpoint(portrait-mobile-max){
                 width:85%;
             }
 
@@ -137,7 +137,7 @@
             background-color: #FFFFFF;
             cursor: pointer;
 
-            @media screen and (max-width: 525px) {
+             @include breakpoint(portrait-mobile-mid) {
                 width: 100%;
                 height: fit-content;
             }
@@ -151,7 +151,7 @@
             color: #FFFFFF;
             padding: 14px 22px;
 
-            @media screen and (max-width: 355px){
+             @include breakpoint(mobile-sm){
                 padding: 14px 15px;
             }
         }
@@ -159,7 +159,7 @@
             font-size: 16px;
             font-weight: 500;
             font-weight: 500;
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 font-size: 14px;
             }
         }
@@ -167,7 +167,7 @@
             font-size: 24px;
             margin-top: 8px;
             font-weight: 600;
-            @media screen and (max-width:768px) {
+             @include breakpoint(ipad-min) {
                 font-size: 22px;
             }
         }
@@ -180,17 +180,17 @@
             font-weight: 500;
             color: #494949;
 
-            @media screen and (max-width: 525px) {
+             @include breakpoint(portrait-mobile-mid) {
                 padding: 0px 10px;
                 margin:  18px 15px;
             }
-            @media screen and (max-width: 355px){
+             @include breakpoint(mobile-sm){
                 padding: 0px;
                 margin: 18px 15px;
             }
         }
     }
-    @media screen and (max-width: 525px) {
+     @include breakpoint(portrait-mobile-mid) {
         height: fit-content;
     }
 }
